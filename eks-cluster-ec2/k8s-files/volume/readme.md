@@ -14,7 +14,7 @@ Create a Mount Targets:
 - You need to deploy an EFS CSI (Container Storage Interface) provisioner in your EKS cluster. This provisioner manages the dynamic provisioning of EFS volumes.
 Clone the EFS CSI Driver repository from GitHub:
 
-> git clone https://github.com/kubernetes-sigs/aws-efs-csi-driver.git.
+> git clone https://github.com/kubernetes-sigs/aws-efs-csi-driver.git
 
 - Navigate to the kubernetes directory by running the follwoing command:
 

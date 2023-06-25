@@ -40,10 +40,7 @@ resource "aws_eks_node_group" "eks_node_group" {
   node_group_name = "${var.cluster_name}-node_group"
   node_role_arn   = aws_iam_role.eks_node_group_role.arn
   subnet_ids      = [aws_subnet.public-us-east-1a.id, aws_subnet.public-us-east-1b.id]
-<<<<<<< HEAD
-=======
   
->>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
 
   scaling_config {
     desired_size = 2
@@ -56,9 +53,6 @@ resource "aws_eks_node_group" "eks_node_group" {
   depends_on = [
     aws_eks_cluster.cluster
   ]
-<<<<<<< HEAD
-=======
 
   
->>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
 }
