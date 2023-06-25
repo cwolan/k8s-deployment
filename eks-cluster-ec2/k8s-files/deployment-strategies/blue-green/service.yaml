@@ -5,7 +5,11 @@ metadata:
   labels:
     app: my-app
 spec:
+<<<<<<< HEAD
   type: "LoadBalancer"
+=======
+  type: LoadBalancer
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   ports:
   - name: http
     port: 80

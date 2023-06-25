@@ -35,7 +35,11 @@ spec:
 apiVersion: apps/v1
 kind:  Deployment
 metadata:
+<<<<<<< HEAD
   name: hello-V1
+=======
+  name: hello-v1
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   labels:
     app: hello
 spec:
@@ -49,7 +53,11 @@ spec:
         app: hello
     spec:
       containers:
+<<<<<<< HEAD
         - name: nginx
+=======
+        - name: hellov1
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
           image: gcr.io/google-samples/hello-app:1.0
           ports:
           - containerPort: 8080
@@ -57,7 +65,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+<<<<<<< HEAD
   name: hello-V2-svc
+=======
+  name: hello-v1-svc
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   labels: 
     app: hello
 spec:
@@ -76,7 +88,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     kubernetes.io/ingress.class: alb
+<<<<<<< HEAD
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+=======
+    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
 spec:
   rules:
     - http:
@@ -85,7 +101,11 @@ spec:
           pathType: Prefix
           backend:
             service:
+<<<<<<< HEAD
               name: hello-V1-svc
+=======
+              name: hello-v1-svc
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
               port:
                 number: 8080
         - path: /hello-v2

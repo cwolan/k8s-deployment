@@ -18,7 +18,11 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
+<<<<<<< HEAD
       maxSurge: 2
+=======
+      maxSurge: 3
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
       maxUnavailable: 2
 
   # The selector field tell the deployment which pod to update with

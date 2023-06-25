@@ -2,6 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
+<<<<<<< HEAD
+=======
+  namespace: application
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   labels:
     app: my-app
 spec:

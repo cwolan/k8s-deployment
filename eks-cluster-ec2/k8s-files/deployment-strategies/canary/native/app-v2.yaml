@@ -5,7 +5,11 @@ metadata:
   labels:
     app: my-app
 spec:
+<<<<<<< HEAD
   replicas: 2
+=======
+  replicas: 9
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   selector:
     matchLabels:
       app: my-app

@@ -7,11 +7,16 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     kubernetes.io/ingress.class: alb
+<<<<<<< HEAD
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+=======
+    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
   labels:
     run: app
 spec:
   rules:
+<<<<<<< HEAD
   - http:
       paths:
       - path: /
@@ -21,6 +26,18 @@ spec:
             name: blue-service
             port:
               number: 8000
+=======
+ # - host: example.com
+   - http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: blue-service
+              port:
+                number: 8000
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
      
       
           

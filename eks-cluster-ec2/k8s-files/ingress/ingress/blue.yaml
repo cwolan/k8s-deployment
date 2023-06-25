@@ -12,6 +12,10 @@ spec:
   # Note here that we match both the app and the version
   selector:
     app: blue-app
+<<<<<<< HEAD
+=======
+    
+>>>>>>> bfa8fc177e20f02aecec0094803f32d04854e08a
 ---
 apiVersion: apps/v1
 kind: Deployment
